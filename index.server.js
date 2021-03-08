@@ -3,6 +3,7 @@ const express = require('express')
 const env = require("dotenv");
 const mongoose = require('mongoose')
 const bodyparser=require('body-parser')
+const port=process.env.PORT || 9000;
 
 const url='mongodb+srv://test_node:Manojan28@cluster0.wz01l.mongodb.net/test_node?retryWrites=true&w=majority'
 const app = express()
@@ -29,6 +30,6 @@ con.on('open', () => {
 })
 
 
-app.listen(9000, () => {
+app.listen(port, () => {
     console.log(`Server started ${process.env.PORT}`)
 })

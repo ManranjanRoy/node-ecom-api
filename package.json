@@ -2,7 +2,7 @@
   "name": "nodebackend",
   "version": "1.0.0",
   "description": "ecom backend",
-  "main": "index.js",
+  "main": "index.server.js",
   "scripts": {
     "test": "test",
     "start": "nodemon server.js"
